@@ -1,0 +1,251 @@
+*{
+    box-sizing: border-box;
+}
+.parent{
+    width: 800px;
+    height: 800px;
+    display: flex;
+    justify-content: space-between;
+    margin: 100px auto;
+}
+.parent>div{
+    width: calc(90% / 2);
+    height: 90%;
+    border: 1px solid #777;
+    position: relative;
+}
+.first{
+    background-color: dodgerblue;
+    color: #fff;
+}
+.second{
+    background-color: #fff;
+    color: #3b3b3b;
+}
+.first .head{
+     width: 150px;
+     height: 150px;
+     border-radius:50% ;
+     -webkit-border-radius:50% ;
+     -moz-border-radius:50% ;
+     -ms-border-radius:50% ;
+     -o-border-radius:50% ;
+     background-color: dodgerblue;
+     color: #fff;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     border: 10px solid #fff;
+     position: absolute;
+     left: 50%;
+     top: -75px;
+     transform: translateX(-50%);
+     -webkit-transform: translateX(-50%);
+     -moz-transform: translateX(-50%);
+     -ms-transform: translateX(-50%);
+     -o-transform: translateX(-50%);
+     font-size: 30px;
+     font-weight: bold;
+}
+.first .head::after{
+    content: "/month";
+    content: "/month";
+        position: absolute;
+        left: 63%;
+        top: 60%;
+        transform: translateX(-50px);
+        -webkit-transform: translateX(-50px);
+        -moz-transform: translateX(-50px);
+        -ms-transform: translateX(-50px);
+        -o-transform: translateX(-50px);
+        font-size: 20px;
+        font-weight: normal;
+        color: #fff;
+}
+.first .head::before{
+        content: "hot";
+        width: 50px;
+        height: 50px;
+        background-color: dodgerblue;
+        color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 5px solid #fff;
+        position: absolute;
+        left: 85%;
+        top: 10%;
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+}
+.first h2{
+    width: 100%;
+        height: 10%;
+        color: #fff;
+        position: absolute;
+        left: 0;
+        top: 10%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        letter-spacing: 3px;
+        font-size: 35px;
+}
+.first .info{
+    width: 100%;
+        height: 50%;
+        /* border: 1px solid tomato; */
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        position: absolute;
+        left: 0;
+        top: 25%;
+}
+.first .info > div{
+    width: 100%;
+    height: calc(100% / 6);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    background-color: dodgerblue;
+    border-bottom: 1px solid #777;
+    text-transform: capitalize;
+}
+.first .info .one{
+    border-top: 1px solid #777;
+}
+.first .sub{
+    width: 140px;
+        height: 50px;
+        background-color: #fff;
+        color: dodgerblue;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+        -webkit-border-radius: 30px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+        position: absolute;
+        left: 50%;
+        top: 85%;
+        transform: translateX(-50%);
+        -webkit-transform: translateX(-50%);
+        -moz-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+        -o-transform: translateX(-50%);
+        text-transform: capitalize;
+        font-weight: bold;
+}
+.second .head{
+     width: 150px;
+     height: 150px;
+     border-radius:50% ;
+     -webkit-border-radius:50% ;
+     -moz-border-radius:50% ;
+     -ms-border-radius:50% ;
+     -o-border-radius:50% ;
+     background-color: #777;
+     color: #fff;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     border: 10px solid #fff;
+     position: absolute;
+     left: 50%;
+     top: -75px;
+     transform: translateX(-50%);
+     -webkit-transform: translateX(-50%);
+     -moz-transform: translateX(-50%);
+     -ms-transform: translateX(-50%);
+     -o-transform: translateX(-50%);
+     font-size: 30px;
+     font-weight: bold;
+}
+.second .head::after{
+    content: "/month";
+    content: "/month";
+        position: absolute;
+        left: 63%;
+        top: 60%;
+        transform: translateX(-50px);
+        -webkit-transform: translateX(-50px);
+        -moz-transform: translateX(-50px);
+        -ms-transform: translateX(-50px);
+        -o-transform: translateX(-50px);
+        font-size: 20px;
+        font-weight: normal;
+        color: #fff;
+}
+.second h2{
+    width: 100%;
+        height: 10%;
+        color: #777;
+        position: absolute;
+        left: 0;
+        top: 10%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        letter-spacing: 3px;
+        font-size: 35px;
+        text-transform: capitalize;
+}
+.second .info{
+    width: 100%;
+        height: 50%;
+        /* border: 1px solid tomato; */
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        position: absolute;
+        left: 0;
+        top: 25%;
+}
+.second .info > div{
+    width: 100%;
+    height: calc(100% / 6);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    background-color: #fff;
+    border-bottom: 1px solid #777;
+    text-transform: capitalize;
+    color: #777;
+}
+.second .info .one{
+    border-top: 1px solid #777;
+}
+.second .sub{
+    width: 140px;
+        height: 50px;
+        color: #fff;
+        background-color: dodgerblue;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+        -webkit-border-radius: 30px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+        position: absolute;
+        left: 50%;
+        top: 85%;
+        transform: translateX(-50%);
+        -webkit-transform: translateX(-50%);
+        -moz-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+        -o-transform: translateX(-50%);
+        text-transform: capitalize;
+        font-weight: bold;
+}
